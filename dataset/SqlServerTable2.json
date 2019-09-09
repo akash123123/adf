@@ -1,0 +1,36 @@
+{
+	"name": "SqlServerTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "CustId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CustName",
+				"type": "varchar"
+			},
+			{
+				"name": "City",
+				"type": "varchar"
+			},
+			{
+				"name": "BalDue",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Customer"
+		}
+	}
+}
